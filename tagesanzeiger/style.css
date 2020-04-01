@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+   
+}
+header img {
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.schweiz {
+    margin-top: 40px;
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.main-nav {
+    position: absolute;
+    top: 30px;
+    left: 800px;
+    width: 80%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    z-index: 100;
+    
+}
+
+.main-nav img {
+    height: 40px;
+    width: 40px;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav li {
+    display: block;
+    padding-left: 50px;
+    list-style: none;
+    line-height: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: bold;
+    color: steelblue;
+}
+
+.top-nav {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    height: 45px;
+    background-color: #fff;
+    border-bottom: .1rem solid #d3d3d3;
+    border-top: .1rem solid #d3d3d3;
+    color: #202346;
+    
+}
+
+.top-nav img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 10px;
+      
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: dimgray;
+    border-left: .1rem solid #d3d3d3;
+    padding-left: 10px;
+}
+
+.sec-first img {
+    height: 580px;
+    width: 800px;
+}
