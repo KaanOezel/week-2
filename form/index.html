@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Profil</h1>
         <h3>Hier können Sie ihr Adress-Angaben einsehen und anpassen.</h3>
-        <hr>
     </header>   
     
     <form action="form.html" method="POST">
@@ -31,23 +31,23 @@
             
             
             <label for="geschlecht">Geschlecht</label>              
-            <input type="radio" name="geschlecht" class="geschlecht" id="weib" value="Female">
-            <label for="weib">W</label>
-            <input type= "radio" name="geschlecht" class="geschlecht" id="mann" value="Male">
-            <label for="mann">M</label>
+            <input type="radio" class="radio-input" name="geschlecht" class="geschlecht" id="weib" value="Female" checked>
+            <label for="weib" class="radio-label">W</label>
+            <input type= "radio" class="radio-input" name="geschlecht" class="geschlecht" id="mann" value="Male">
+            <label for="mann" class="radio-label">M</label>
             <br>
 
 
             <label for="sprache">Sprache</label>
-            <input type="radio" id="deutch" class="sprache" name="sprache" value="DE" />
-            <label for="deutch">DE</label>
-            <input type="radio" id="french" class="sprache" name="sprache" value="FR" />
-            <label for="french">FR</label>
-            <input type="radio" id="italien" class="sprache" name="sprache" value="IT" />
-            <label for="italien">IT</label>
+            <input type="radio" class="radio-input" id="deutch" class="sprache" name="sprache" value="DE" checked>
+            <label for="deutch" class="radio-label">DE</label>
+            <input type="radio" class="radio-input" id="french" class="sprache" name="sprache" value="FR">
+            <label for="french" class="radio-label">FR</label>
+            <input type="radio" class="radio-input" id="italien" class="sprache" name="sprache" value="IT">
+            <label for="italien" class="radio-label">IT</label>
 
         </fieldset>
-        <hr>
+    
 
         <fieldset id="kontakt">
             <legend>Kontaktdaten</legend>
@@ -76,7 +76,7 @@
             <input type="email" id="mail2" name="mail2" placeholder="optional">  
 
         </fieldset>
-        <hr>
+       
 
         <fieldset id="adressdaten">
             <legend>Adressdaten</legend>
@@ -112,11 +112,10 @@
             <input type="text" id="ort" class="post-code" name="ort"  placeholder="Musterstadt" required>
             <br>
 
-            <label for="kanton">Kanton</label>
-            <label for="land">/ Land</label>
+            <label for="kanton">Kanton /Land</label>
             <input type="text" id="kanton"  name="kanton" placeholder="ZH" required>
             <input type="text" id="land"  name="land" placeholder="Schweiz" required>
-            
+            <br>
 
             <input type="submit" value="Speichern">
 
