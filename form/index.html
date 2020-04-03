@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
     
     <form action="form.html" method="POST">
         <fieldset id="Daten">
-            <legend>Persönliche Daten</legend>
+            <legend id="personlich">Persönliche Daten</legend>
 
             <label for="titel">Titel</label>
             <input type="text" name="Titel" id="titel" >
@@ -28,24 +29,24 @@
             <input type="text" name="Nachname" id="nachname">
             <br>
 
-            
-            
-            <label for="geschlecht">Geschlecht</label>              
-            <input type="radio" class="radio-input" name="geschlecht" class="geschlecht" id="weib" value="Female" checked>
-            <label for="weib" class="radio-label">W</label>
-            <input type= "radio" class="radio-input" name="geschlecht" class="geschlecht" id="mann" value="Male">
-            <label for="mann" class="radio-label">M</label>
+            <div>
+                <label for="geschlecht">Geschlecht</label>           
+                <input type="radio" class="radio-input" name="geschlecht" class="geschlecht" id="weib" value="Female" checked>
+                <label for="weib" class="radio-label">W</label>
+                <input type= "radio" class="radio-input" name="geschlecht" class="geschlecht" id="mann" value="Male">
+                <label for="mann" class="radio-label">M</label>
+            </div> 
             <br>
 
-
-            <label for="sprache">Sprache</label>
-            <input type="radio" class="radio-input" id="deutch" class="sprache" name="sprache" value="DE" checked>
-            <label for="deutch" class="radio-label">DE</label>
-            <input type="radio" class="radio-input" id="french" class="sprache" name="sprache" value="FR">
-            <label for="french" class="radio-label">FR</label>
-            <input type="radio" class="radio-input" id="italien" class="sprache" name="sprache" value="IT">
-            <label for="italien" class="radio-label">IT</label>
-
+            <div>
+                <label for="sprache">Sprache</label>
+                <input type="radio" class="radio-input" id="deutch" class="sprache" name="sprache" value="DE" checked>
+                <label for="deutch" class="sprache-label">DE</label>
+                <input type="radio" class="radio-input" id="french" class="sprache" name="sprache" value="FR">
+                <label for="french" class="sprache-label">FR</label>
+                <input type="radio" class="radio-input" id="italien" class="sprache" name="sprache" value="IT">
+                <label for="italien" class="sprache-label">IT</label>
+            </div>
         </fieldset>
     
 
@@ -117,8 +118,9 @@
             <input type="text" id="land"  name="land" placeholder="Schweiz" required>
             <br>
 
+            
             <input type="submit" value="Speichern">
-
+           
         </fieldset>
     </form>
     
